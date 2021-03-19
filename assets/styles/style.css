@@ -154,7 +154,7 @@
   width: 0;
   height: 0;
 }
-.full-page .card-sec .card-container .billing-sec .switch .round {
+.full-page .card-sec .card-container .billing-sec .switch .round-check {
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -164,10 +164,10 @@
   left: 0;
   cursor: pointer;
 }
-.full-page .card-sec .card-container .billing-sec .switch .round:hover {
+.full-page .card-sec .card-container .billing-sec .switch .round-check:hover {
   background-color: #10d5c2;
 }
-.full-page .card-sec .card-container .billing-sec .switch .round::before {
+.full-page .card-sec .card-container .billing-sec .switch .round-check::before {
   content: "";
   position: absolute;
   height: 70%;
@@ -177,13 +177,13 @@
   bottom: 15%;
   left: 10%;
 }
-.full-page .card-sec .card-container .billing-sec .switch input:checked + .round {
+.full-page .card-sec .card-container .billing-sec .switch input:checked + .round-check {
   background-color: #10d5c2;
 }
-.full-page .card-sec .card-container .billing-sec .switch input:focus + .round {
+.full-page .card-sec .card-container .billing-sec .switch input:focus + .round-check {
   box-shadow: 0 0 1px #cdd7ee;
 }
-.full-page .card-sec .card-container .billing-sec .switch input:checked + .round::before {
+.full-page .card-sec .card-container .billing-sec .switch input:checked + .round-check::before {
   transform: translateX(26px);
 }
 .full-page .card-sec .card-container .billing-sec .discount {
