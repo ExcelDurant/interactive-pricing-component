@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/styles/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive pricing component</title>
 
 
 </head>
+
 <body>
 
   <div class="full-page">
@@ -22,17 +24,19 @@
       <div class="card-container">
         <div class="card-header">
           <p class="views">Pageviews</p>
-          <h5 class="price">$<span class="period">/month</span></h5>
-          <div class="slider"></div>
+          <h5 class="price">$<span class="cash"></span><span class="period">/month</span></h5>
+          <div class="slider-container">
+            <input type="range" id="myslider" class="slider" min="0" max="100" step="25">
+          </div>
         </div>
         <div class="billing-sec">
           <p class="billing">Monthly Billing</p>
           <label class="switch">
-            <input type="checkbox" >
+            <input type="checkbox" id="checkbox" onclick="slide()">
             <div class="round"></div>
           </label>
           <p class="billing">Yearly Billing</p>
-          <p class="discount">25%<span class="dis-txt">discount</span></p>
+          <p class="discount">25% <span class="dis-txt">discount</span></p>
         </div>
         <div class="card-footer">
           <div class="advantages-sec">
@@ -45,16 +49,18 @@
           <a href="#" class="trial">Start my trial </a>
         </div>
       </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Excel Durant</a>.
+      </div>
     </section>
   </div>
 
+
+
   
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 
   <script src="./assets/script/script.js"></script>
 </body>
+
 </html>
