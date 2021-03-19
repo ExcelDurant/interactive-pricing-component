@@ -8,11 +8,13 @@ let checkbox = document.getElementById('checkbox');
 viewsOutput.innerHTML = views[0];
 pricesOutput.innerHTML = prices[0];
 
+// Function to calculate the discount
 function discount(price, dsicountPercentage) {
     let discounted = (price * 12) - (price * (dsicountPercentage / 100) * 12);
     return discounted;
 }
 
+// function executing when clicking on the check btn
 function slide() {
     if (checkbox.checked == true) {
         period.innerHTML = '/year';
@@ -23,6 +25,7 @@ function slide() {
     }
 }
 
+// when moving the slider range
 slider.oninput = function () {
     if (checkbox.checked == false) {
         period.innerHTML = '/month';
@@ -83,6 +86,7 @@ slider.oninput = function () {
 
 }
 
+// loading or reloading the page
 document.onload = slider.oninput();
 
 
