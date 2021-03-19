@@ -155,9 +155,9 @@
   height: 0;
 }
 .full-page .card-sec .card-container .billing-sec .switch .round-check {
+  display: inline-block;
   width: 100%;
   height: 100%;
-  display: inline-block;
   position: absolute;
   background-color: #cdd7ee;
   border-radius: 34px;
