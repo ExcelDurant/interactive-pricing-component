@@ -89,6 +89,8 @@
 .full-page .card-sec .card-container .card-header .price {
   font-size: 33px;
   color: #293356;
+  display: flex;
+  align-items: center;
 }
 .full-page .card-sec .card-container .card-header .price .period {
   font-size: 15px;

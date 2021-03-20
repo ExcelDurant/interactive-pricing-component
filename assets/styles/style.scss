@@ -90,6 +90,8 @@ $blackborder: 1px solid black;
                 .price {
                     font-size: 33px;
                     color: $dark-saturated-blue;
+                    display: flex;
+                    align-items: center;
                     .period {
                         font-size: 15px;
                         color: $grayish-blue;

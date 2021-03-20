@@ -11,7 +11,7 @@ pricesOutput.innerHTML = prices[0];
 // Function to calculate the discount
 function discount(price, dsicountPercentage) {
     let discounted = (price * 12) - (price * (dsicountPercentage / 100) * 12);
-    return discounted;
+    return discounted.toFixed(2);
 }
 
 // function executing when clicking on the check btn
@@ -33,27 +33,27 @@ slider.oninput = function () {
         if (this.value == 0) {
             console.log(this.value);
             viewsOutput.innerHTML = views[0];
-            pricesOutput.innerHTML = prices[0];
+            pricesOutput.innerHTML = prices[0].toFixed(2);
         }
         if (this.value == 25) {
             console.log(this.value);
             viewsOutput.innerHTML = views[1];
-            pricesOutput.innerHTML = prices[1];
+            pricesOutput.innerHTML = prices[1].toFixed(2);
         }
         if (this.value == 50) {
             console.log(this.value);
             viewsOutput.innerHTML = views[2];
-            pricesOutput.innerHTML = prices[2];
+            pricesOutput.innerHTML = prices[2].toFixed(2);
         }
         if (this.value == 75) {
             console.log(this.value);
             viewsOutput.innerHTML = views[3];
-            pricesOutput.innerHTML = prices[3];
+            pricesOutput.innerHTML = prices[3].toFixed(2);
         }
         if (this.value == 100) {
             console.log(this.value);
             viewsOutput.innerHTML = views[4];
-            pricesOutput.innerHTML = prices[4];
+            pricesOutput.innerHTML = prices[4].toFixed(2);
         }
     } else {
         period.innerHTML = '/year';
